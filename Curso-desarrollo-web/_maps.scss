@@ -1,0 +1,19 @@
+$colors: (
+  primary: #774485,
+  secondary: darkorchid,
+  text-dark: black,
+  text-light: white,
+  background-light: rgba(0, 0, 0, 0.05),
+  background-transparent: rgba(255, 255, 255, 0.8)
+);
+
+$font-sizes: (
+  small: 14px,
+  medium: 16px,
+  large: 24px
+);
+
+$font-family: sans-serif;
+$border-radius: 5px;
+$padding: 30px;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
