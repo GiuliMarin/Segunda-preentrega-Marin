@@ -1,0 +1,22 @@
+@mixin container-style($bg-color) {
+    background-color: $bg-color;
+    padding: 2%;
+    border-radius: 12px;
+    border: 2px solid $text-color-dark;
+    box-shadow: $shadow;
+    width: 170%;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  @mixin breakpoint($size) {
+    @if $size == mobile {
+      @media (max-width: 768px) { @content; }
+    }
+    @else if $size == tablet {
+      @media (max-width: 992px) { @content; }
+    }
+    @else if $size == desktop {
+      @media (min-width: 993px) { @content; }
+    }
+  }

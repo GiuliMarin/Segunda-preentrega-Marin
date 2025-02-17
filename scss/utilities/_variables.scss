@@ -1,0 +1,32 @@
+/*$background-image: url('../assets/ilustración salud mental.png');*/
+$primary-color: #A563BA;
+$secundary-color: #E1C7EB;
+$text-color: black;
+$button-radius: 15px;
+$font-family: 'Roboto', sans-serif;
+$spacing-unit: 20px;
+$border-radius: 15px;
+$background-color: white;
+$chat-background-color: #a563ba;
+$chat-text-color: white;
+$chat-border-radius: 50%;
+$hover-border-radius: 5px;
+$shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$padding: 20px;
+$margin-top: 15px;
+$text-color-dark: black;
+$text-color-light: white;
+$shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+@keyframes rotateText {
+    0% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+  }
+
