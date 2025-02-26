@@ -1,6 +1,8 @@
 @import "./utilities/variables";
 @import "./utilities/maps";
 @import "./utilities/mixins";
+@import "./layout/media/media768";
+@import "./layout/media/media480";
 @import "./base/reset";
 @import "./layout/header";
 @import "./layout/footer.scss";

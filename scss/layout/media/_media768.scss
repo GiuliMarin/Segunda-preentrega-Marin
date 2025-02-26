@@ -1,36 +1,206 @@
-@media (max-width: 768px) {
-    .contenedores {
-      flex-direction: column;
-      align-items: center;
-    }  }
+/*Header*/
 
-   
-    @media screen and (max-width: 768px) {
-      .title-container h1 {
-        font-size: 28px;
-      }
-    
-      .content-container p,
-      .law-container p {
-        font-size: 14px;
-      }
-    }
-    
-    @media screen and (max-width: 480px) {
-      .title-container h1 {
-        font-size: 24px;
-      }
-    
-      .content-container {
-        padding: 8%;
-      }
-    
-      .law-container {
-        padding: 8px;
-      }
-    
-      .content-container p,
-      .law-container p {
-        font-size: 12px;
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+
+    .izquierda-header {
+      .NavBar {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          margin: 10px 0;
+        }
       }
     }
+
+    .usuario {
+      position: static;
+      margin-top: 10px;
+    }
+
+    .Derecha-header {
+      text-align: center;
+    }
+  }
+}
+
+/*Contenedores y botones index*/
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+
+    .left-box {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+
+    .center-text {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .right-button {
+      width: 100%;
+      justify-content: center;
+      padding: 10px;
+
+      button {
+        width: 80%;
+      }
+    }
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+    
+    .button {
+      width: 90%;
+    }
+  }
+}
+
+
+
+/*Testimonios y chat*/
+
+@media (max-width: 768px) {
+  .Testimonios {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    & > div {
+      width: 90%;
+      text-align: center;
+    }
+  }
+
+  .Chat {
+    width: 80%;
+    bottom: 20px;
+    right: 10%;
+    text-align: center;
+  }
+}
+
+/*Footer*/
+@media (max-width: 768px) {
+  footer {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+}
+
+/*body que es la salud*/
+
+@media (max-width: 768px) {
+  .title-container {
+    top: 10%;
+    
+    h1 {
+      font-size: 24px; // Reducimos el tamaño del título
+    }
+  }
+
+  .content-container {
+    left: 5%;  // Ajustamos la posición
+    width: 90%; // Hacemos que ocupe casi todo el ancho
+    
+    p {
+      font-size: 14px; // Mantenerlo legible en móvil
+      text-align: justify;
+    }
+  }
+
+  .law-container {
+    left: 5%;
+    top: 90%;
+    max-width: 100%; 
+    text-align: center;
+    
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+/*sobre nosotros*/
+@media screen and (max-width: 768px) {
+  .contenido-principal {
+    width: 90%;
+    left: 5%;
+    padding: 20px;
+  }
+
+  .contenedores {
+    gap: 30px;
+  }
+
+  .contenedor {
+    width: 350px;
+    height: 350px;
+  }
+
+  .contenedor h2 {
+    font-size: 16px;
+  }
+
+  .contenedor p {
+    font-size: 12px;
+  }
+}
+
+
+/*soy paciente y soy profesional*/
+
+@media screen and (max-width: 768px) {
+  .container-mi-cuenta {
+    padding: 20px;
+  }
+
+  .account-container-mi-cuenta {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  h1.mi-cuenta {
+    font-size: map-get($font-sizes, medium);
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  p.editar-datos {
+    font-size: map-get($font-sizes, small);
+    top: 8%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  form {
+    gap: 1rem;
+  }
+
+  button {
+    font-size: map-get($font-sizes, small);
+  }
+}
