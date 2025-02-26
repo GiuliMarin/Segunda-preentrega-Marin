@@ -389,20 +389,5 @@ body {
       }
     }
     
-    // Responsive Design
-    @include breakpoint(mobile) {
-      .account-container-mi-cuenta {
-        padding: $padding / 2;
-      }
     
-      h1.mi-cuenta {
-        font-size: map-get($font-sizes, medium);
-        top: 20%;
-      }
-    
-      p.editar-datos {
-        font-size: map-get($font-sizes, small);
-        top: 30%;
-      }
-    }
     
