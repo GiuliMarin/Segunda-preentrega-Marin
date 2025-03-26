@@ -14,7 +14,7 @@ body {
     .left-box {
       background-color: #A563BA;
       height: 150px;
-      width: 100%;
+      width: 60%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -113,10 +113,10 @@ body {
   
   .TestimonioDePacientes {
     position: relative;
-    top: 35%;
+    top: 50%;
     left: 0;
     font-family: $font-family;
-    font-size: 40px;
+    font-size: 30px;
     color: black;
     background-color: #E1C7EB;
   
@@ -124,7 +124,7 @@ body {
   
   .card-container {
     position: absolute;
-    top: 120%;
+    top: 100%;
     left: -50px;
     display: flex;
     align-items: center;
@@ -137,10 +137,9 @@ body {
     margin-right: $spacing-unit;
    
   }
-  
   .Testimonios {
     position: absolute;
-    top: 180%;
+    top: 100%;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -149,7 +148,7 @@ body {
   
     & > div { // Aplica estilos a los elementos dentro de .Testimonios
       width: 30%;
-      padding: 10px;
+      padding: 5px;
       background-color: white;
       border: 2px solid $primary-color;
       border-radius: $border-radius;
@@ -162,7 +161,7 @@ body {
   
   .FotoComillas {
     position: absolute;
-    top: 280%;
+    top: 260%;
     right: -3%;
   }
   
@@ -200,9 +199,9 @@ body {
 /*Sobre nosotros*/
   .contenido-principal {
     left: 20%;
-    width: 110%;
+    width: 100%;
     max-width: 1540px;
-    margin-top: $margin-top;
+    margin-top: -10px;
     padding: $padding;
     background-color: $primary-color;
     text-align: center;
@@ -211,7 +210,7 @@ body {
   
     p {
       font-family: $font-family;
-      font-size: 16px;
+      font-size: 14px;
       color: $text-color;
       line-height: 1.6;
     }
@@ -228,6 +227,7 @@ body {
   .contenedor {
     width: 500px;
     height: 500px;
+    top: 20%;
     background-color: white;
     border: 4px solid $primary-color;
     border-radius: 50%;
@@ -240,7 +240,7 @@ body {
     text-align: center;
     transition: transform 0.3s ease;
       &:hover {
-        transform: scale(1.15); 
+        transform: scale(0.75); 
   
     h2 {
       font-family: $font-family;
@@ -255,22 +255,24 @@ body {
       font-size: 10px;
       color: $text-color;
       line-height: 1.5;
-      padding: 0 10px;
+      padding: 0 5px;
     }
   }
 }
   
     .contenedor {
-      width: 400px;
-      height: 300px;
+      width: 300px;
+      height: 200px;
     }
   
     .contenedor h2 {
       font-size: 18px;
+      font-family: $font-family;
     }
   
     .contenedor p {
       font-size: 12px;
+      font-family: $font-family;
     }
 
     /*Qué es la salud*/
@@ -344,7 +346,7 @@ body {
         font-size: map-get($font-sizes, large);
         color: map-get($colors, text-dark);
         position: absolute;
-        top: -5%;
+        top: -30%;
         left: 0;
         margin: 0;
       }
@@ -356,13 +358,13 @@ body {
         font-size: map-get($font-sizes, medium);
         color: map-get($colors, text-dark);
         position: absolute;
-        top: 3%; 
+        top: -15%; 
         left: 0;
       }
     }
     
     form {
-      top: 60%;
+      top: 80%;
       display: grid;
       gap: 1.5rem;
     }

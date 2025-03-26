@@ -20,3 +20,17 @@
       @media (min-width: 993px) { @content; }
     }
   }
+
+  @mixin mobile-container {
+    width: 100%;
+    position: relative;
+    left: 0;
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  @mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
